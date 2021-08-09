@@ -1,3 +1,4 @@
+/* eslint-disable react/default-props-match-prop-types */
 import React, { useContext } from "react";
 import Responsive from "react-responsive";
 import { injectIntl, intlShape } from "@edx/frontend-platform/i18n";
@@ -45,7 +46,6 @@ function Header({ intl }) {
       href: `${config.LMS_BASE_URL}/dashboard`,
       content: intl.formatMessage(messages["header.links.courses"]),
     },
-    ,
     {
       type: "item",
       href: `/`,
@@ -147,6 +147,15 @@ function Header({ intl }) {
     mainMenu: getConfig().AUTHN_MINIMAL_HEADER ? [] : mainMenu,
     userMenu: getConfig().AUTHN_MINIMAL_HEADER ? [] : userMenu,
     loggedOutItems: getConfig().AUTHN_MINIMAL_HEADER ? [] : loggedOutItems,
+    siteName: config.SITE_NAME,
+  };
+
+  Header.defaultProps = {
+    homeLink: false,
+    coursesLink: false,
+    articlesLink: false,
+    programsLink: false,
+    aboutLink: false,
   };
 
   return (

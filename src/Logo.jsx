@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 import React from "react";
 import PropTypes from "prop-types";
 import logo from "./Logo.png";

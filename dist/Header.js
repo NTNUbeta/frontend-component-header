@@ -1,3 +1,4 @@
+/* eslint-disable react/default-props-match-prop-types */
 import React, { useContext } from "react";
 import Responsive from "react-responsive";
 import { injectIntl, intlShape } from "@edx/frontend-platform/i18n";
@@ -24,7 +25,7 @@ function Header(_ref) {
     type: "item",
     href: "".concat(config.LMS_BASE_URL, "/dashboard"),
     content: intl.formatMessage(messages["header.links.courses"])
-  },, {
+  }, {
     type: "item",
     href: "/",
     active: homeLink,
@@ -97,7 +98,15 @@ function Header(_ref) {
     avatar: authenticatedUser !== null ? authenticatedUser.avatar : null,
     mainMenu: getConfig().AUTHN_MINIMAL_HEADER ? [] : mainMenu,
     userMenu: getConfig().AUTHN_MINIMAL_HEADER ? [] : userMenu,
-    loggedOutItems: getConfig().AUTHN_MINIMAL_HEADER ? [] : loggedOutItems
+    loggedOutItems: getConfig().AUTHN_MINIMAL_HEADER ? [] : loggedOutItems,
+    siteName: config.SITE_NAME
+  };
+  Header.defaultProps = {
+    homeLink: false,
+    coursesLink: false,
+    articlesLink: false,
+    programsLink: false,
+    aboutLink: false
   };
   return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(Responsive, {
     maxWidth: 768
