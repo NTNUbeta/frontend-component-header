@@ -1,10 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
+import logo from "./logo.png";
 
 function Logo({ src, alt, ...attributes }) {
-  return (
-    <img src={src} alt={alt} {...attributes} />
-  );
+  return <img src={logo} alt={alt} {...attributes} />;
 }
 
 Logo.propTypes = {
@@ -12,15 +11,10 @@ Logo.propTypes = {
   alt: PropTypes.string.isRequired,
 };
 
-function LinkedLogo({
-  href,
-  src,
-  alt,
-  ...attributes
-}) {
+function LinkedLogo({ href, src, alt, ...attributes }) {
   return (
     <a href={href} {...attributes}>
-      <img className="d-block" src={src} alt={alt} />
+      <img className="d-block" src={logo} alt={alt} />
     </a>
   );
 }
