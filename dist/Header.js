@@ -16,7 +16,6 @@ subscribe(APP_CONFIG_INITIALIZED, function () {
 
 function Header(_ref) {
   var intl = _ref.intl,
-      homeLink = _ref.homeLink,
       coursesLink = _ref.coursesLink,
       articlesLink = _ref.articlesLink,
       programsLink = _ref.programsLink,
@@ -28,15 +27,6 @@ function Header(_ref) {
       config = _useContext.config;
 
   var mainMenu = [{
-    type: "item",
-    href: "".concat(config.LMS_BASE_URL, "/dashboard"),
-    content: intl.formatMessage(messages["header.links.courses"])
-  }, {
-    type: "item",
-    href: "/",
-    active: homeLink,
-    content: intl.formatMessage(messages["header.links.home"])
-  }, {
     type: "item",
     href: "/search",
     active: searchLink,

@@ -1,5 +1,6 @@
-import { defineMessages } from '@edx/frontend-platform/i18n';
+//import { defineMessages } from "@edx/frontend-platform/i18n";
 
+/*
 const messages = defineMessages({
   'header.links.courses': {
     id: 'header.links.courses',
@@ -98,4 +99,4 @@ const messages = defineMessages({
   },
 });
 
-export default messages;
+export default messages; */

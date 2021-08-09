@@ -39,7 +39,6 @@ subscribe(APP_CONFIG_INITIALIZED, () => {
 
 function Header({
   intl,
-  homeLink,
   coursesLink,
   articlesLink,
   programsLink,
@@ -49,17 +48,6 @@ function Header({
   const { authenticatedUser, config } = useContext(AppContext);
 
   const mainMenu = [
-    {
-      type: "item",
-      href: `${config.LMS_BASE_URL}/dashboard`,
-      content: intl.formatMessage(messages["header.links.courses"]),
-    },
-    {
-      type: "item",
-      href: `/`,
-      active: homeLink,
-      content: intl.formatMessage(messages["header.links.home"]),
-    },
     {
       type: "item",
       href: `/search`,
