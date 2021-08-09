@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/index.jsx"],"names":["Header","messages"],"mappings":"AAAA,OAAOA,MAAP,MAAmB,UAAnB;AACA,OAAOC,QAAP,MAAqB,cAArB;AAEA,SAASA,QAAT;AAEA,eAAeD,MAAf","sourcesContent":["import Header from './Header';\nimport messages from './i18n/index';\n\nexport { messages };\n\nexport default Header;\n"],"file":"index.js"}
