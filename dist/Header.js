@@ -15,7 +15,13 @@ subscribe(APP_CONFIG_INITIALIZED, function () {
 });
 
 function Header(_ref) {
-  var intl = _ref.intl;
+  var intl = _ref.intl,
+      homeLink = _ref.homeLink,
+      coursesLink = _ref.coursesLink,
+      articlesLink = _ref.articlesLink,
+      programsLink = _ref.programsLink,
+      searchLink = _ref.searchLink,
+      aboutLink = _ref.aboutLink;
 
   var _useContext = useContext(AppContext),
       authenticatedUser = _useContext.authenticatedUser,

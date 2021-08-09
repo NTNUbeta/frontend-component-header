@@ -37,7 +37,15 @@ subscribe(APP_CONFIG_INITIALIZED, () => {
   );
 });
 
-function Header({ intl }) {
+function Header({
+  intl,
+  homeLink,
+  coursesLink,
+  articlesLink,
+  programsLink,
+  searchLink,
+  aboutLink,
+}) {
   const { authenticatedUser, config } = useContext(AppContext);
 
   const mainMenu = [
