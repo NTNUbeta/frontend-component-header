@@ -1,9 +1,10 @@
 {
-  "name": "@edx/frontend-component-header",
-  "version": "1.0.0-semantically-released",
-  "description": "The standard header for Open edX",
+  "name": "@ntnubeta/frontend-component-header",
+  "version": "1.0.0",
+  "description": "The standard header for ntnu marketing application",
   "main": "dist/index.js",
   "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
     "access": "public"
   },
   "scripts": {
@@ -25,14 +26,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/edx/frontend-component-header.git"
+    "url": "git+https://github.com/ntnubeta/frontend-component-header.git"
   },
   "author": "edX",
   "license": "AGPL-3.0",
   "bugs": {
-    "url": "https://github.com/edx/frontend-component-header/issues"
+    "url": "https://github.com/ntnubeta/frontend-component-header/issues"
   },
-  "homepage": "https://github.com/edx/frontend-component-header#readme",
+  "homepage": "https://github.com/ntnubeta/frontend-component-header#readme",
   "devDependencies": {
     "@commitlint/cli": "12.1.4",
     "@commitlint/config-angular": "12.1.4",
