@@ -1,6 +1,6 @@
 {
   "name": "@sigmundgranaas/frontend-component-header",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "The standard header for ntnu marketing application",
   "main": "dist/index.js",
   "publishConfig": {
@@ -61,8 +61,6 @@
     "react-transition-group": "4.4.2"
   },
   "peerDependencies": {
-    "@edx/frontend-platform": "^1.8.0",
-    "@edx/paragon": "^7.0.0",
     "prop-types": "^15.5.10",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
