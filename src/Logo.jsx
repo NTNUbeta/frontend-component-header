@@ -1,7 +1,7 @@
 /* eslint-disable quotes */
 import React from "react";
 import PropTypes from "prop-types";
-import logo from "./Logo.png";
+import logo from "./logo.png";
 
 function Logo({ src, alt, ...attributes }) {
   return <img src={logo} alt={alt} {...attributes} />;
